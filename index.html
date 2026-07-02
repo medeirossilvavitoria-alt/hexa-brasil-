@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HEXA BRASIL</title>
+    <!-- Vinculando o arquivo de estilo externo -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+        <h1>HEXA BRASIL</h1>
+        <div id="cronometro-container">
+            Faltam <span id="contador-tempo">--d --h --m --s</span> para a Copa do Mundo! 🏆
+        </div>
+    </header>
+
+    <div class="container">
+
+        <!-- Área para criar post -->
+        <div class="criar-post-container">
+            <h3>✨ CRIE SEU POST DO HEXA</h3>
+            <input type="text" id="novo-post-texto" placeholder="Escreva algo sobre o jogo ou a torcida...">
+            <input type="text" id="novo-post-url" placeholder="Cole aqui a URL de uma imagem da internet...">
+            <button id="btn-publicar">Publicar Post 🇧🇷</button>
+        </div>
+
+        <!-- Feed de posts -->
+        <div id="feed-posts">
+            
+            <!-- Post 1: Imagem do Treino do Bobinho que você enviou -->
+            <div class="post-card">
+                <div class="post-imagem">
+                    <img src="https://lance.com.br" alt="Jogadores fazem bobinho em treino da seleção">
+                </div>
+                <div class="post-texto">
+                    O clima é de pura <span class="destaque">DESCONTRAÇÃO E FOCO</span> no treino! Os craques fazem o tradicional <span class="destaque">"BOBINHO" EM CAMPO</span> para afiar os passes rápidos. É a união perfeita em busca do <span class="destaque">INÉDITO HEXACHAMPIONSHIP</span>!
+                </div>
+                <div class="botoes-interacao">
+                    <button class="btn btn-curtir">❤️ Curtir (<span class="num-curtidas">342</span>)</button>
+                    <button class="btn btn-comentar">💬 Comentar</button>
+                    <button class="btn btn-salvar">💾 Salvar</button>
+                    <button class="btn btn-repostar">🔄 Repostar</button>
+                </div>
+                <div class="comentarios-area">
+                    <input type="text" placeholder="Escreva um comentário...">
+                    <button class="btn-enviar">Enviar</button>
+                    <div class="lista-comentarios"></div>
+                </div>
+            </div>
+
+            <!-- Post 2: Torcida -->
+            <div class="post-card">
+                <div class="post-imagem">
+                    <img src="https://unsplash.com" alt="Torcida do Brasil">
+                </div>
+                <div class="post-texto">
+                    A <span class="destaque">ENERGIA DA TORCIDA</span> empurra nossa seleção rumo à tão sonhada <span class="destaque">ESTRELA DE NÚMERO SEIS</span>! O clima está contagiante nas ruas, bares e estádios.
+                </div>
+                <div class="botoes-interacao">
+                    <button class="btn btn-curtir">❤️ Curtir (<span class="num-curtidas">185</span>)</button>
+                    <button class="btn btn-comentar">💬 Comentar</button>
+                    <button class="btn btn-salvar">💾 Salvar</button>
+                    <button class="btn btn-repostar">🔄 Repostar</button>
+                </div>
+                <div class="comentarios-area">
+                    <input type="text" placeholder="Escreva um comentário...">
+                    <button class="btn-enviar">Enviar</button>
+                    <div class="lista-comentarios"></div>
+                </div>
+            </div>
+
+        </div>
+
+        <!-- Seção de Enquetes Interativas Reestruturadas -->
+        <div class="enquete" data-enquete="1">
+            <h3>⚡ SE VOCÊ FOSSE O TÉCNICO, QUAL SERIA SUA ESTRATÉGIA?</h3>
+            <div class="opcoes-container">
+                <button class="opcao-btn-larga" data-voto="Ataque Total 💥">💥 ATAQUE TOTAL (Pressão alta o tempo todo!)</button>
+                <button class="opcao-btn-larga" data-voto="Contra-Ataque Rápido ⚡">⚡ CONTRA-ATAQUE (Fechado atrás e velocidade!)</button>
+                <button class="opcao-btn-larga" data-voto="Tiki-Taka Brasileiro 🧠">🧠 POSSE DE BOLA (Dribles e passes curtos!)</button>
+            </div>
+            <div class="resultado"></div>
+        </div>
+
+        <div class="enquete" data-enquete="2">
+            <h3>🎭 QUAL É O SEU NÍVEL DE ANSIEDADE PARA O PRÓXIMO JOGO?</h3>
+            <div class="opcoes-container">
+                <button class="opcao-btn-larga" data-voto="Coração na boca! 😰">😰 CORAÇÃO NA BOCA (Nem consigo dormir direito!)</button>
+                <button class="opcao-btn-larga" data-voto="Calmo como o mestre. 😎">😎 CALMO E CONFIANTE (O Hexa já é realidade!)</button>
+                <button class="opcao-btn-larga" data-voto="Rendo de nervoso! 🥶">🥶 RUIDO DE NERVOSO (Vou roer todas as unhas!)</button>
+            </div>
+            <div class="resultado"></div>
+        </div>
+
+        <div class="enquete" data-enquete="3">
+            <h3>🥁 SE O BRASIL GANHAR O HEXA, O QUE VOCÊ VAI FAZER?</h3>
+            <div class="opcoes-container">
+                <button class="opcao-btn-larga" data-voto="Pintar a rua inteira! 🎨">🎨 ARTE NA RUA (Vou pintar o asfalto de verde e amarelo!)</button>
+                <button class="opcao-btn-larga" data-voto="Festa de 3 dias! 🚀">🚀 FESTA ETERNA (Só paro de comemorar na outra semana!)</button>
+                <button class="opcao-btn-larga" data-voto="Fazer uma promessa maluca! 🤪">🤪 PROMESSA PAGA (Vou raspar o cabelo no estilo Cascão!)</button>
+            </div>
+            <div class="resultado"></div>
+        </div>
+
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
+
