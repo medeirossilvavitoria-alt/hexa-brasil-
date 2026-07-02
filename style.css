@@ -1,0 +1,203 @@
+body {
+    background-color: #E6F7FF; /* Fundo Azul Bebê */
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    color: #333;
+}
+
+header {
+    background-color: #20B2AA; /* Verde Água */
+    color: #FFDF00; /* Amarelo da Seleção */
+    text-align: center;
+    padding: 20px 0;
+}
+
+h1 {
+    font-size: 3rem;
+    margin: 0 0 10px 0;
+}
+
+#cronometro-container {
+    font-size: 1.1rem;
+    font-weight: bold;
+    color: #FFFFFF;
+    background-color: rgba(0, 0, 0, 0.2);
+    display: inline-block;
+    padding: 8px 15px;
+    border-radius: 20px;
+}
+
+.container {
+    max-width: 600px;
+    margin: 20px auto;
+    padding: 0 20px;
+}
+
+/* Área de criar post */
+.criar-post-container {
+    background-color: #FFFFFF;
+    border: 2px dashed #20B2AA;
+    border-radius: 12px;
+    padding: 20px;
+    margin-bottom: 30px;
+}
+
+.criar-post-container h3 {
+    margin-top: 0;
+    color: #20B2AA;
+}
+
+.criar-post-container input {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 12px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    box-sizing: border-box;
+}
+
+#btn-publicar {
+    width: 100%;
+    padding: 12px;
+    background-color: #FFDF00;
+    color: #20B2AA;
+    font-weight: bold;
+    border: none;
+    border-radius: 6px;
+    font-size: 1rem;
+    cursor: pointer;
+    text-transform: uppercase;
+}
+
+/* Post estruturado como card */
+.post-card {
+    background-color: #FFFFFF;
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    margin-bottom: 30px;
+    overflow: hidden;
+    border-bottom: 5px solid #FFDF00; /* Detalhe Amarelo */
+}
+
+.post-imagem img {
+    width: 100%;
+    height: auto;
+    display: block;
+    background-color: #eee; /* Cor de carregamento se o link falhar */
+}
+
+.post-texto {
+    padding: 15px;
+    font-size: 1.1rem;
+    line-height: 1.5;
+}
+
+/* Palavras em destaque */
+.destaque {
+    font-weight: bold;
+    color: #20B2AA; /* Verde Água */
+    text-transform: uppercase;
+}
+
+/* Barra de Botões */
+.botoes-interacao {
+    display: flex;
+    justify-content: space-around;
+    padding: 10px 0;
+    border-top: 1px solid #ddd;
+    background-color: #F7F7F7;
+}
+
+.btn {
+    background: none;
+    border: none;
+    font-size: 0.95rem;
+    cursor: pointer;
+    color: #666;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.btn-curtir.curtido {
+    color: #FF3B30;
+    font-weight: bold;
+}
+
+.comentarios-area {
+    display: none;
+    padding: 15px;
+    border-top: 1px solid #eee;
+    background-color: #FAFAFA;
+}
+
+.comentarios-area input {
+    width: 70%;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.btn-enviar {
+    padding: 8px 12px;
+    background-color: #20B2AA;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.lista-comentarios {
+    margin-top: 10px;
+    font-size: 0.9rem;
+    color: #555;
+}
+
+/* Enquetes Avançadas com Botões Largos contendo Textos + Emojis */
+.enquete {
+    background-color: #20B2AA; /* Verde Água */
+    color: white;
+    padding: 20px;
+    border-radius: 12px;
+    margin-bottom: 25px;
+    border: 2px solid #FFDF00;
+}
+
+.enquete h3 {
+    margin-top: 0;
+    font-size: 1.1rem;
+    line-height: 1.4;
+}
+
+.opcoes-container {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-top: 15px;
+}
+
+.opcao-btn-larga {
+    background-color: #FFDF00; /* Amarelo */
+    color: #333;
+    border: none;
+    padding: 12px 15px;
+    border-radius: 8px;
+    font-size: 0.95rem;
+    font-weight: bold;
+    text-align: left;
+    cursor: pointer;
+    transition: transform 0.1s, background-color 0.2s;
+}
+
+.opcao-btn-larga:hover {
+    transform: translateX(5px);
+    background-color: #ffe633;
+}
+
+.resultado {
+    margin-top: 15px;
+    font-weight: bold;
+    text-align: center;
+    color: #FFDF00;
+}
